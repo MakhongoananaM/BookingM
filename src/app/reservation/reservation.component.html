@@ -1,0 +1,43 @@
+
+<div clss="body">
+<div class="Selection">
+  <br>
+  <h2><font color="white"> Make Reservations</font> </h2>
+  <br>
+</div>
+  <div class="Room1">
+      
+    <form action="saveinfo" method="post">
+    <p>Arrival <input type="date" (blur)="setArrival($event)"></p>
+    <p>Departure <input type="date" (blur)="setDeparture($event)"></p>
+    <p>Adults <input type="number" (blur)="setAdults($event)"></p>
+    <p>Children <input type="number" (blur)="setChildren($event)"></p>
+   
+    <label for="room"> Roome Type </label>
+    <select ng-model="room" name="room" (change)="setRoom($event)">
+       <option value=""></option>
+       <option value="twin ">Twin room</option>
+       <option value="standard">Standad Room</option>
+       <option value="family">Family Room</option>
+       <option value="suite">Presidental Suite</option>
+       <option value="suite2">Family Presidental Suite</option>
+    </select>
+       
+  </form>
+
+<a routerLink="/booking"><button type ="submt" (click)="book()">Book</button></a>
+
+  </div>
+</div>
+<br>
+
+<br>CHECK IN:	14h00
+<br>CHECK OUT:	11h00
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+
+
+
+<div>
+  <h2>Booking Form</h2>
+  
+  
+
+  
+  <img src="../../assets/Dinning.jpg" width="750" height="600"><img src="../../assets/Stone-Manor-101-Wedding-Hawthorne-NY-13_main.1439260752.jpg" width="750" height="600">;
+ 
+<br>
+<table border="1px">
+  <thead>
+    <tr>
+      <th>Arrival</th>
+      <th>Departure</th>
+      <th>Adults</th>
+      <th>Children</th>
+      <th>Room Type</th>
+      <td>delete</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let booking of bookingsArray; let i = index;">
+      <td>{{ booking.arrival }}</td>
+      <td>{{ booking.departure }}</td>
+      <td>{{ booking.adults }}</td>
+      <td>{{ booking.children }}</td>
+      <td>{{ booking.room }}</td>
+      <td><button (click)="delete(i)">delete</button></td>
+    </tr>
+  </tbody>
+</table>
